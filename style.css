@@ -5,9 +5,16 @@ body {
 
 }
 
+img {
+    height: 50px;
+    width: auto;
+    border-radius: 100%;
+}
+
 svg {
     height: 25px;
     width: auto;
+    cursor: pointer;
 }
 
 .left {grid-area: left}
@@ -37,15 +44,18 @@ svg {
     align-items: center;
     margin-left: 1.5vh;
     margin-top: -1.5vh;
+    
 }
 
 
 .left p {
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .left svg {
     filter: invert(1);
+    
 }
 
 .home {
@@ -59,17 +69,156 @@ svg {
 .dashboard {
     gap: 2vh;
     margin-left: 0vh;
+    cursor:default;
 }
 
 .dashboard svg {
     height: 50px;
     width: auto;
+    cursor: default;
 }
 
-.middle {
-    background-color: pink;
-}
+/* /////////////////////////////////////////////// */
 
 .top {
-    background-color: purple;
+    background-color: rgb(254,254,255);
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 5vh;
+    box-shadow: 0px 5px 5px -1px rgb(193, 193, 193);
+    z-index: 10;
+    gap: 1vh;
 }
+
+.top-top {
+    display: flex;
+    gap: 30%;
+}
+
+.top-top svg {
+    height: 27px;
+    width: auto;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+
+}
+
+.search {
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(227,232,241);
+    height: 2rem;
+    width: 70vh;
+    padding: 0vh 1vh;
+    font-size: 1.2rem;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    font-size: 1.3rem;
+}
+
+.account img, .account p {
+    cursor: pointer;
+}
+
+.top-bottom {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+
+.hello {
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.hello img {
+    height: 75px;
+    width: auto;
+}
+
+.hello-there {
+    font-size: 1rem;
+}
+
+.name {
+    font-size: 1.7rem;
+    margin-top: -1vh;
+}
+
+
+.upload button {
+    background-color: rgb(24,147,212);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    height: 4vh;
+    width: 10vh;
+    font-size: 1.1rem;
+    margin-right: 3vh;
+    cursor: pointer;
+}
+
+.upload .last {
+    margin-right: 0vh;
+}
+
+
+
+
+/* /////////////////////////////////////////////// */
+
+.middle {
+    background-color: rgb(227,232,241);
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    gap: 50%;
+    font-size: 1.2rem;
+    padding: 1vh 5vh;
+}
+
+.middle-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+}
+
+.middle-left {
+    /* background-color: pink;  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vh;
+    padding: 1vh 5vh;
+}
+
+.middle-right {
+    background-color: palevioletred;  
+    
+}
+
+.middle-left > * {
+    border: 1px solid black;
+    width: 40vh;
+    height: 15vh;
+}
+
+
+
+
+
+
+
