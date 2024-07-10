@@ -132,7 +132,7 @@ svg {
 .top-bottom {
     display: flex;
     align-items: center;
-    gap: 50%;
+    gap: 45%;
 }
 
 .hello {
@@ -185,8 +185,8 @@ svg {
 
 .text {
     display: flex;
-    gap: 50%;
-    font-size: 1.2rem;
+    gap: 57.3%;
+    font-size: 1.3rem;
     padding: 1vh 5vh;
 }
 
@@ -201,22 +201,55 @@ svg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5vh;
+    gap: 3vh;
     padding: 1vh 5vh;
-}
-
-.middle-right {
-    background-color: palevioletred;  
     
 }
 
 .middle-left > * {
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: inset 50px 0px 0px -40px rgb(240,181,40);
+    border-radius: 10px;
+    
     width: 40vh;
-    height: 15vh;
+    height: 20vh;
+    margin-bottom: -4vh;
+    margin-top: -3vh;
 }
 
+.lastdiv {
+    margin-bottom: 0vh;
+}
 
+.middle-right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4.5vh;
+    padding: 1vh 0vh;
+    margin-left: -3vh;
+}
+
+.middle-right div {
+    background-color: white;
+    
+    border-radius: 10px;
+    
+    width: 40vh;
+    height: 30vh;
+    margin-bottom: -4vh;
+    margin-top: -3vh;
+}
+
+.middle-right p {
+    font-size: 1.3rem;
+    margin-bottom: -1vh;
+    z-index: 10;
+}
+
+.trending {
+    margin-bottom: -5vh;
+}
 
 
 
