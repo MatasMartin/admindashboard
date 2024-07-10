@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+}
+
+svg {
+    height: 25px;
+    width: auto;
+}
+
+.left {grid-area: left}
+.top {grid-area: top}
+.middle {grid-area: middle}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+     "left top"
+     "left middle";
+     grid-template-columns: 1fr 4.5fr;
+     grid-template-rows: 1fr 4fr;
+     height: 100vh;
+}
+
+.left {
+    background-color: rgb(24,147,212);
+    padding: 2vh 2vh;
+}
+
+.left > * {
+    gap: 3vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-left: 1.5vh;
+    margin-top: -1.5vh;
+}
+
+
+.left p {
+    font-size: 1.3rem;
+}
+
+.left svg {
+    filter: invert(1);
+}
+
+.home {
+    margin-top: 3vh;
+}
+
+.settings {
+    margin-top: 3vh;
+}
+
+.dashboard {
+    gap: 2vh;
+    margin-left: 0vh;
+}
+
+.dashboard svg {
+    height: 50px;
+    width: auto;
+}
+
+.middle {
+    background-color: pink;
+}
+
+.top {
+    background-color: purple;
+}
